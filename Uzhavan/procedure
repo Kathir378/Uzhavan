@@ -1,0 +1,758 @@
+---------------------------------------------------Wheat---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+{
+  "Land Preparation": {
+    "Days": "1-5",
+    "Plow & Till": "Prepare soil for good seedbed.",
+    "Level & Fertilize": "Add compost or manure to soil."
+  },
+
+  "Sowing": {
+    "Days": "6-10",
+    "Select Seeds": "Choose suitable variety.",
+    "Sow Seeds": "Use a seed drill or broadcast method, spacing at 20-25 cm.",
+    "Irrigate": "Provide light irrigation after sowing."
+  },
+
+  "Germination & Early Growth": {
+    "Days": "11-20",
+    "Irrigate Regularly": "Keep soil moist.",
+    "Weed Control": "Use manual or herbicides to control weeds.",
+    "Fertilizer": "Apply half nitrogen fertilizer."
+  },
+
+  "Vegetative Growth": {
+    "Days": "21-60",
+    "Irrigation": "Water every 7-10 days.",
+    "Fertilize Again": "Apply remaining nitrogen and phosphorus.",
+    "Pest Control": "Monitor for pests and diseases."
+  },
+  "Flowering & Grain Formation": {
+    "Days": "61-90",
+    "Irrigation": "Maintain soil moisture, avoid over-watering.",
+    "Pest Management": "Apply necessary pesticides.",
+    "Fertilizer": "Apply potassium and phosphorus for grain quality."
+  },
+
+  "Ripening": {
+    "Days": "91-120",
+    "Water Stress": "Reduce irrigation to allow plant maturity.",
+    "Disease Check": "Ensure no fungal diseases."
+  },
+
+  "Harvesting": {
+    "Days": "121-130",
+    "Harvest": "Cut plants when they are golden and dry.",
+    "Threshing": "Separate grains from straw.",
+    "Drying": "Sun-dry grains to reduce moisture."
+  },
+
+  "Post-Harvest": {
+    "Days": "131-140",
+    "Storage": "Keep grains in dry, cool storage.",
+    "Processing": "Mill for flour or sell the grains."
+  }
+
+}
+
+---------------------------------------------------Banana---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+{
+  "Land Preparation": {
+    "Days": "1-5",
+    "Site Selection": "Choose a well-drained area with ample sunlight.",
+    "Plow & Till": "Prepare soil for good root growth.",
+    "Fertilize": "Apply organic compost or well-rotted manure to enrich soil."
+  },
+  "Planting": {
+    "Days": "6-10",
+    "Choose Variety": "Select banana variety suited for your climate.",
+    "Planting": "Space banana plants 2-3 meters apart.",
+    "Planting Depth": "Ensure roots are covered and the stem is upright.",
+    "Watering": "Water immediately after planting."
+  },
+  "Early Growth": {
+    "Days": "11-60",
+    "Water Regularly": "Ensure soil remains consistently moist.",
+    "Mulch": "Apply organic mulch to retain moisture and control weeds.",
+    "Fertilize": "Apply nitrogen-rich fertilizer (organic or chemical).",
+    "Weed Control": "Remove weeds manually or use herbicides."
+  },
+  "Vegetative Growth": {
+    "Days": "61-120",
+    "Watering": "Continue regular watering, especially during dry spells.",
+    "Fertilization": "Apply additional fertilizer (balanced NPK mix).",
+    "Pest & Disease Management": "Watch for pests like aphids, and fungal infections.",
+    "Support": "Use stakes to support growing plants if needed."
+  },
+  "Flowering & Fruiting": {
+    "Days": "121-180",
+    "Flowering": "Bananas start flowering in 9-12 months (depends on variety).",
+    "Thinning": "Remove some suckers to focus energy on the main plant.",
+    "Fertilize": "Apply potassium-based fertilizer to encourage fruiting.",
+    "Watering": "Maintain regular watering."
+  },
+  "Ripening": {
+    "Days": "181-270",
+    "Reduce Watering": "Slightly reduce watering to avoid over-saturation.",
+    "Protect Fruits": "Wrap bunches in cloth bags to protect from pests.",
+    "Disease Check": "Ensure fruits are not infected with fungal diseases."
+  },
+  "Harvesting": {
+    "Days": "270-360",
+    "Timing": "Harvest when fruits are full-sized but still green (for long shelf-life).",
+    "Cutting": "Use a sharp knife to cut the entire bunch from the plant.",
+    "Ripening": "Allow bananas to ripen off the plant."
+  },
+  "Post-Harvest": {
+    "Storage": "Store bananas in a cool place, away from sunlight.",
+    "Selling or Consumption": "Once ripe, bananas can be sold or consumed fresh."
+  }
+}
+
+
+---------------------------------------------------Rice---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+{
+  "Land Preparation": {
+    "Days": "1-5",
+    "Plow & Till": "Prepare soil for good seedbed.",
+    "Level & Fertilize": "Add compost or manure to soil."
+  },
+  "Sowing": {
+    "Days": "6-10",
+    "Select Seeds": "Choose suitable variety.",
+    "Sow Seeds": "Use a seed drill or broadcast method, spacing at 20-25 cm.",
+    "Irrigate": "Provide light irrigation after sowing."
+  },
+  "Germination & Early Growth": {
+    "Days": "11-20",
+    "Irrigate Regularly": "Keep soil moist.",
+    "Weed Control": "Use manual or herbicides to control weeds.",
+    "Fertilizer": "Apply half nitrogen fertilizer."
+  },
+  "Vegetative Growth": {
+    "Days": "21-60",
+    "Irrigation": "Water every 7-10 days.",
+    "Fertilize Again": "Apply remaining nitrogen and phosphorus.",
+    "Pest Control": "Monitor for pests and diseases."
+  },
+  "Flowering & Grain Formation": {
+    "Days": "61-90",
+    "Irrigation": "Maintain soil moisture, avoid over-watering.",
+    "Pest Management": "Apply necessary pesticides.",
+    "Fertilizer": "Apply potassium and phosphorus for grain quality."
+  },
+  "Ripening": {
+    "Days": "91-120",
+    "Water Stress": "Reduce irrigation to allow plant maturity.",
+    "Disease Check": "Ensure no fungal diseases."
+  },
+  "Harvesting": {
+    "Days": "121-130",
+    "Harvest": "Cut plants when they are golden and dry.",
+    "Threshing": "Separate grains from straw.",
+    "Drying": "Sun-dry grains to reduce moisture."
+  },
+  "Post-Harvest": {
+    "Days": "131-140",
+    "Storage": "Keep grains in dry, cool storage.",
+    "Processing": "Mill for flour or sell the grains."
+  }
+}
+
+---------------------------------------------------Cocunut---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+{
+  "Land Preparation": {
+    "Days": "1-5",
+    "Site Selection": "Choose a well-drained area with sandy or loamy soil.",
+    "Plowing": "Prepare the land by deep plowing and leveling.",
+    "Fertilization": "Add organic manure or compost to enrich soil nutrients."
+  },
+  "Planting": {
+    "Days": "6-10",
+    "Seed Selection": "Choose high-yielding, disease-resistant coconut varieties.",
+    "Spacing": "Plant seedlings 7-10 meters apart.",
+    "Planting Depth": "Ensure seedlings are planted deep enough for root stability.",
+    "Watering": "Provide sufficient irrigation after planting."
+  },
+  "Early Growth": {
+    "Days": "11-60",
+    "Water Management": "Ensure regular watering, especially in dry climates.",
+    "Weed Control": "Remove weeds manually or use mulch to suppress growth.",
+    "Fertilization": "Apply nitrogen-rich fertilizer to promote early growth.",
+    "Mulching": "Use organic mulch to retain soil moisture and improve soil fertility."
+  },
+  "Vegetative Growth": {
+    "Days": "61-365",
+    "Watering": "Provide deep watering every 5-7 days.",
+    "Fertilization": "Apply a balanced NPK fertilizer to support leaf and root development.",
+    "Pest & Disease Management": "Monitor for pests like rhinoceros beetles and red palm weevils.",
+    "Support": "Use windbreaks to protect young trees from strong winds."
+  },
+  "Flowering & Fruit Development": {
+    "Days": "365-1,000",
+    "Flowering": "Coconut trees begin to flower within 3-5 years.",
+    "Pollination": "Encourage natural pollination through insects and wind.",
+    "Fertilization": "Apply additional potassium-based fertilizer for better fruiting.",
+    "Watering": "Continue irrigation, ensuring soil remains moist."
+  },
+  "Maturity & Ripening": {
+    "Days": "1,000-1,500",
+    "Fruit Maturation": "Coconuts take about 12 months to mature after flowering.",
+    "Pest Control": "Monitor for fruit pests like coconut mites and rodents.",
+    "Harvest Preparation": "Check for mature coconuts ready for harvesting."
+  },
+  "Harvesting": {
+    "Days": "1,500+",
+    "Harvest Timing": "Harvest mature coconuts when they turn brown (for copra) or green (for tender coconuts).",
+    "Harvest Method": "Use climbing techniques or harvesting tools to collect coconuts.",
+    "Post-Harvest Handling": "Sort coconuts based on usage—copra, oil extraction, or fresh consumption."
+  },
+  "Post-Harvest Processing": {
+    "Storage": "Store harvested coconuts in a cool, dry place.",
+    "Processing": "Process coconuts into products like copra, coconut oil, or coir.",
+    "Marketing": "Sell fresh coconuts or processed products in the market."
+  }
+}
+
+
+---------------------------------------------------Ground nut---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+{
+  "Land Preparation": {
+    "Days": "1-5",
+    "Site Selection": "Choose well-drained sandy loam soil with good sunlight.",
+    "Plowing & Tilling": "Deep plow and harrow to create a fine seedbed.",
+    "Fertilization": "Apply compost or well-rotted manure before sowing."
+  },
+  "Sowing": {
+    "Days": "6-10",
+    "Seed Selection": "Choose disease-resistant, high-yielding groundnut varieties.",
+    "Sowing Method": "Plant seeds 4-6 cm deep with 30-45 cm row spacing.",
+    "Watering": "Provide light irrigation after sowing."
+  },
+  "Germination & Early Growth": {
+    "Days": "11-20",
+    "Irrigation": "Ensure soil remains moist but not waterlogged.",
+    "Weed Control": "Use manual weeding or pre-emergence herbicides.",
+    "Fertilization": "Apply basal nitrogen and phosphorus fertilizer."
+  },
+  "Vegetative Growth": {
+    "Days": "21-45",
+    "Watering": "Irrigate every 7-10 days, depending on soil moisture.",
+    "Fertilization": "Apply additional phosphorus and potassium.",
+    "Pest & Disease Control": "Monitor for aphids, thrips, and fungal diseases.",
+    "Earthing Up": "Gently mound soil around the base of plants to support root development."
+  },
+  "Flowering & Peg Formation": {
+    "Days": "46-80",
+    "Flowering": "Groundnut plants start flowering and sending pegs into the soil.",
+    "Irrigation": "Maintain adequate soil moisture for peg penetration.",
+    "Pest Management": "Control pod borers and leaf miners.",
+    "Calcium Application": "Apply gypsum to enhance pod formation."
+  },
+  "Pod Development & Maturity": {
+    "Days": "81-110",
+    "Watering": "Reduce irrigation as pods mature to prevent fungal infections.",
+    "Pest Control": "Continue monitoring for pests like white grubs.",
+    "Disease Prevention": "Watch for fungal diseases like rust and leaf spot."
+  },
+  "Harvesting": {
+    "Days": "111-130",
+    "Maturity Check": "Pods mature when inner shells have dark veins.",
+    "Harvesting Method": "Lift plants from the soil and shake off excess dirt.",
+    "Drying": "Allow harvested pods to dry in the sun for 5-7 days."
+  },
+  "Post-Harvest Processing": {
+    "Storage": "Store dried pods in well-ventilated sacks to prevent mold.",
+    "Processing": "Shell groundnuts for direct sale or further processing.",
+    "Marketing": "Sell as raw nuts, processed oil, or peanut-based products."
+  }
+}
+
+---------------------------------------------------tomato---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+{
+  "Land Preparation": {
+    "Days": "1-5",
+    "Site Selection": "Choose well-drained, fertile soil with good sunlight.",
+    "Plowing & Tilling": "Loosen the soil and mix organic compost.",
+    "Fertilization": "Apply well-rotted manure or balanced NPK fertilizer."
+  },
+  "Sowing & Germination": {
+    "Days": "6-15",
+    "Seed Selection": "Choose disease-resistant, high-yielding tomato varieties.",
+    "Sowing Method": "Sow seeds in nursery trays or directly in the field.",
+    "Watering": "Keep soil moist but not waterlogged."
+  },
+  "Seedling & Transplanting": {
+    "Days": "16-30",
+    "Transplanting": "Move seedlings to the main field when they have 4-6 leaves.",
+    "Spacing": "Maintain 45-60 cm spacing between plants.",
+    "Mulching": "Apply mulch to retain moisture and reduce weeds."
+  },
+  "Vegetative Growth": {
+    "Days": "31-60",
+    "Watering": "Irrigate every 5https://one.zoho.com/zohoone/zohocorp/home/cxapp/cliq/company/64396901/index.do-7 days depending on soil moisture.",
+    "Fertilization": "Apply nitrogen-rich fertilizer for strong stem growth.",
+    "Weed Control": "Manually remove weeds or use herbicides."
+  },
+  "Flowering & Fruiting": {
+    "Days": "61-90",
+    "Flowering": "Tomato plants start producing flowers.",
+    "Pollination": "Encourage natural pollinators or hand-pollinate if needed.",
+    "Pest & Disease Control": "Monitor for aphids, whiteflies, and fungal infections."
+  },
+  "Fruit Development": {
+    "Days": "91-120",
+    "Watering": "Maintain consistent moisture to prevent fruit cracking.",
+    "Fertilization": "Apply potassium and phosphorus for healthy fruit formation.",
+    "Support": "Use stakes or cages to support growing tomato plants."
+  },
+  "Ripening & Harvesting": {
+    "Days": "121-140",
+    "Ripening": "Fruits change color from green to red, orange, or yellow.",
+    "Harvesting": "Pick tomatoes when fully colored but still firm.",
+    "Post-Harvest Care": "Store in a cool, dry place to extend shelf life."
+  },
+  "Post-Harvest Processing": {
+    "Sorting & Packaging": "Sort tomatoes by size and quality before packing.",
+    "Storage": "Keep at room temperature or refrigerate for longer shelf life.",
+    "Marketing": "Sell fresh, process into puree, ketchup, or dried tomatoes."
+  }
+}
+
+
+---------------------------------------------------Cotton---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+{
+  "Land Preparation": {
+    "Days": "1-10",
+    "Site Selection": "Choose well-drained, deep, loamy soil with good sunlight.",
+    "Plowing & Tilling": "Deep plowing and harrowing to break soil compaction.",
+    "Fertilization": "Apply organic manure and basal fertilizers before sowing."
+  },
+  "Sowing & Germination": {
+    "Days": "11-20",
+    "Seed Selection": "Use high-yield, pest-resistant cotton seeds.",
+    "Sowing Method": "Sow seeds in rows with 60-75 cm spacing.",
+    "Watering": "Provide light irrigation to aid germination."
+  },
+  "Seedling & Early Growth": {
+    "Days": "21-40",
+    "Weed Control": "Remove weeds manually or apply herbicides.",
+    "Fertilization": "Apply nitrogen-based fertilizers for initial growth.",
+    "Pest Management": "Monitor for early pests like jassids and aphids."
+  },
+  "Vegetative Growth": {
+    "Days": "41-70",
+    "Watering": "Irrigate every 7-10 days based on soil moisture.",
+    "Fertilization": "Add phosphorus and potassium for strong plant structure.",
+    "Pest & Disease Control": "Apply pesticides to control bollworms and mealybugs."
+  },
+  "Flowering & Boll Formation": {
+    "Days": "71-110",
+    "Flowering": "Cotton plants start flowering, leading to boll formation.",
+    "Nutrient Management": "Apply foliar sprays of micronutrients if needed.",
+    "Pest Control": "Protect from whiteflies, bollworms, and fungal diseases."
+  },
+  "Boll Maturation": {
+    "Days": "111-140",
+    "Watering": "Reduce irrigation to allow bolls to mature properly.",
+    "Defoliation": "Use defoliants to help in easy harvesting.",
+    "Pest Management": "Monitor for late-stage pests like pink bollworms."
+  },
+  "Harvesting": {
+    "Days": "141-180",
+    "Harvesting Time": "Pick cotton bolls when they are fully open and dry.",
+    "Manual vs Mechanical Harvesting": "Use hands or cotton pickers for harvesting.",
+    "Sorting & Grading": "Sort cotton by fiber quality and remove trash."
+  },
+  "Post-Harvest Processing": {
+    "Ginning": "Remove cotton seeds from the fiber for processing.",
+    "Storage": "Store in dry, ventilated warehouses to prevent moisture damage.",
+    "Marketing": "Sell raw cotton to textile industries or export markets."
+  }
+}
+
+
+---------------------------------------------------Mango---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+{
+  "Land Preparation": {
+    "Days": "1-10",
+    "Site Selection": "Choose well-drained soil with good sunlight.",
+    "Soil Preparation": "Deep plowing and leveling to improve root penetration.",
+    "Fertilization": "Apply organic manure and basal fertilizers before planting."
+  },
+  "Planting": {
+    "Days": "11-20",
+    "Variety Selection": "Choose high-yield, disease-resistant mango varieties.",
+    "Planting Method": "Dig pits (1m x 1m x 1m) and plant grafted saplings.",
+    "Spacing": "Maintain 8-10 meters between trees for proper growth.",
+    "Watering": "Irrigate immediately after planting."
+  },
+  "Early Growth": {
+    "Days": "21-90",
+    "Watering": "Water regularly, ensuring soil remains moist but not waterlogged.",
+    "Mulching": "Apply organic mulch to retain moisture and suppress weeds.",
+    "Fertilization": "Apply nitrogen-based fertilizers for early plant development.",
+    "Weed Control": "Manually remove weeds or use mulch."
+  },
+  "Vegetative Growth": {
+    "Days": "91-365",
+    "Pruning": "Trim weak branches to encourage strong framework growth.",
+    "Watering": "Irrigate every 10-15 days, reducing frequency in winter.",
+    "Fertilization": "Apply a balanced NPK mix for healthy growth.",
+    "Pest & Disease Management": "Monitor for pests like mango hoppers and anthracnose."
+  },
+  "Flowering & Fruit Set": {
+    "Year": "2-4",
+    "Flowering": "Mango trees begin flowering in 2-4 years, depending on variety.",
+    "Pollination": "Encourage natural pollinators or manual pollination.",
+    "Thinning": "Remove excess flowers to improve fruit quality.",
+    "Pest Control": "Apply protective sprays against hoppers and powdery mildew."
+  },
+  "Fruit Development": {
+    "Year": "3-5",
+    "Watering": "Maintain adequate irrigation, especially during dry periods.",
+    "Nutrient Management": "Apply potassium and calcium to enhance fruit quality.",
+    "Bagging": "Cover young fruits with paper bags to protect from pests."
+  },
+  "Ripening": {
+    "Year": "4-6",
+    "Water Management": "Reduce irrigation to enhance natural fruit ripening.",
+    "Pest & Disease Check": "Monitor for fruit flies and fungal infections.",
+    "Harvest Readiness": "Check for color change and firmness."
+  },
+  "Harvesting": {
+    "Year": "4-6",
+    "Harvesting Method": "Use sharp tools to cut mangoes with stalks intact.",
+    "Sorting & Grading": "Sort fruits based on size, ripeness, and quality.",
+    "Post-Harvest Treatment": "Wash and treat mangoes to prevent spoilage."
+  },
+  "Post-Harvest Handling": {
+    "Storage": "Store at 10-13°C to extend shelf life.",
+    "Ripening Process": "Use ethylene chambers for uniform ripening.",
+    "Marketing": "Sell mangoes fresh, processed, or export to global markets."
+  }
+}
+
+---------------------------------------------------termarinl---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+{
+  "Land Preparation": {
+    "Days": "1-15",
+    "Site Selection": "Choose well-drained soil with good sunlight.",
+    "Soil Preparation": "Deep plowing and leveling to improve root penetration.",
+    "Fertilization": "Apply organic manure and basal fertilizers before planting."
+  },
+  "Planting": {
+    "Days": "16-30",
+    "Variety Selection": "Choose high-yield and disease-resistant tamarind varieties.",
+    "Planting Method": "Dig pits (1m x 1m x 1m) and plant saplings or grafted seedlings.",
+    "Spacing": "Maintain 8-10 meters between trees for proper canopy growth.",
+    "Watering": "Irrigate immediately after planting."
+  },
+  "Early Growth": {
+    "Days": "31-180",
+    "Watering": "Water regularly, especially in dry seasons.",
+    "Mulching": "Apply organic mulch to retain moisture and suppress weeds.",
+    "Fertilization": "Apply nitrogen-based fertilizers for early plant development.",
+    "Weed Control": "Manually remove weeds or use mulch."
+  },
+  "Vegetative Growth": {
+    "Year": "1-3",
+    "Pruning": "Trim weak branches to encourage strong framework growth.",
+    "Watering": "Irrigate once every 10-15 days, reducing frequency in winter.",
+    "Fertilization": "Apply balanced NPK mix for healthy foliage growth.",
+    "Pest & Disease Management": "Monitor for pests like borers and scale insects."
+  },
+  "Flowering & Pod Formation": {
+    "Year": "4-6",
+    "Flowering": "Tamarind trees begin flowering after 4-6 years.",
+    "Pollination": "Encourage natural pollinators like bees for better yield.",
+    "Pod Setting": "Ensure proper watering and fertilization to support pod formation.",
+    "Pest Control": "Apply protective sprays against insects and fungal infections."
+  },
+  "Pod Development": {
+    "Year": "5-7",
+    "Watering": "Maintain irrigation, especially during pod development.",
+    "Nutrient Management": "Apply phosphorus and potassium to enhance pod quality.",
+    "Bagging": "Protect young pods from pest attacks if necessary."
+  },
+  "Ripening": {
+    "Year": "6-8",
+    "Water Management": "Reduce irrigation to promote natural ripening.",
+    "Pest & Disease Check": "Monitor for pod borers and fungal diseases.",
+    "Harvest Readiness": "Pods turn brown and dry when ready for harvest."
+  },
+  "Harvesting": {
+    "Year": "6-8",
+    "Harvesting Method": "Pluck mature pods manually or shake branches for collection.",
+    "Sorting & Grading": "Sort pods based on size, quality, and maturity.",
+    "Post-Harvest Treatment": "Dry pods properly to enhance shelf life."
+  },
+  "Post-Harvest Handling": {
+    "Storage": "Store dried tamarind in cool, dry conditions to prevent spoilage.",
+    "Processing": "Remove seeds, make pulp, or process into various products.",
+    "Marketing": "Sell tamarind fresh, as pulp, or in processed forms."
+  }
+}
+
+
+---------------------------------------------------Rubber---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+{
+  "Land Preparation": {
+    "Days": "1-30",
+    "Site Selection": "Choose well-drained soil with high rainfall and good sunlight.",
+    "Soil Preparation": "Deep plowing and leveling to improve root penetration.",
+    "Fertilization": "Apply organic manure and basal fertilizers before planting."
+  },
+  "Planting": {
+    "Days": "31-60",
+    "Variety Selection": "Use high-yield and disease-resistant rubber clones (e.g., RRII 105, RRIM 600).",
+    "Planting Method": "Plant budded stumps or seedlings in prepared pits (1m x 1m).",
+    "Spacing": "Maintain 4-5 meters between plants for proper growth.",
+    "Watering": "Irrigate immediately after planting and maintain moisture."
+  },
+  "Early Growth": {
+    "Year": "1-3",
+    "Watering": "Regular irrigation, especially during dry months.",
+    "Mulching": "Apply organic mulch to retain moisture and suppress weeds.",
+    "Fertilization": "Apply nitrogen-based fertilizers for healthy plant development.",
+    "Weed Control": "Remove weeds manually or use mulch.",
+    "Support": "Use stakes to support young plants against strong winds."
+  },
+  "Vegetative Growth": {
+    "Year": "4-6",
+    "Pruning": "Trim weak branches to develop a strong canopy.",
+    "Watering": "Irrigate during dry periods to maintain growth.",
+    "Fertilization": "Apply balanced NPK mix to enhance stem and leaf development.",
+    "Pest & Disease Management": "Monitor for leaf diseases like powdery mildew and pink disease."
+  },
+  "Maturity & Latex Production": {
+    "Year": "6-7",
+    "Tapping Readiness": "Trees are ready for latex tapping when they reach 50 cm girth.",
+    "Tapping Method": "Use the half-spiral method to extract latex without harming the tree.",
+    "Latex Collection": "Collect latex in cups and process immediately to prevent coagulation.",
+    "Fertilization": "Apply potassium and phosphorus to improve latex yield.",
+    "Pest Control": "Monitor for bark diseases and root rot."
+  },
+  "Peak Production": {
+    "Year": "8-25",
+    "Tapping Frequency": "Tap trees every alternate day for optimal latex flow.",
+    "Yield Management": "Use ethylene-based stimulants to enhance latex flow.",
+    "Disease Check": "Ensure protection against leaf blight and root diseases.",
+    "Fertilization": "Apply essential nutrients to maintain yield."
+  },
+  "Decline & Replanting": {
+    "Year": "25-30",
+    "Declining Yield": "After 25-30 years, latex yield decreases significantly.",
+    "Replanting": "Cut old trees and plant new high-yielding varieties.",
+    "Soil Preparation": "Improve soil fertility with green manure before replanting."
+  },
+  "Post-Harvest Processing": {
+    "Coagulation": "Process latex into rubber sheets or blocks.",
+    "Drying": "Air-dry or smoke-dry rubber sheets for better quality.",
+    "Grading": "Sort rubber based on quality and market requirements.",
+    "Storage": "Store rubber sheets in a dry, cool environment."
+  },
+  "Marketing & Sales": {
+    "Distribution": "Sell processed rubber to industries or export markets.",
+    "Value Addition": "Process rubber into gloves, tires, or other rubber products."
+  }
+}
+
+
+---------------------------------------------------SunFlower---------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+{
+  "Land Preparation": {
+    "Days": "1-7",
+    "Site Selection": "Choose well-drained, loamy soil with good sunlight exposure.",
+    "Plowing & Tilling": "Plow the field deeply to improve root penetration.",
+    "Fertilization": "Apply organic manure or basal fertilizers to enrich the soil."
+  },
+  "Sowing": {
+    "Days": "8-14",
+    "Seed Selection": "Use high-yield hybrid or disease-resistant sunflower seeds.",
+    "Planting Method": "Sow seeds at a depth of 2.5-5 cm using a row spacing of 60-75 cm.",
+    "Irrigation": "Provide light irrigation after sowing to maintain soil moisture."
+  },
+  "Germination & Early Growth": {
+    "Days": "15-30",
+    "Watering": "Ensure regular watering, especially during dry periods.",
+    "Weed Control": "Remove weeds manually or use selective herbicides.",
+    "Fertilization": "Apply nitrogen-based fertilizers to promote early growth."
+  },
+  "Vegetative Growth": {
+    "Days": "31-60",
+    "Irrigation": "Water the plants every 7-10 days, depending on soil moisture.",
+    "Fertilization": "Apply phosphorus and potassium fertilizers for strong stem growth.",
+    "Pest & Disease Management": "Monitor for aphids, caterpillars, and fungal infections."
+  },
+  "Flowering": {
+    "Days": "61-90",
+    "Pollination": "Sunflowers are self-pollinated but benefit from bee activity.",
+    "Irrigation": "Maintain consistent soil moisture for proper flower formation.",
+    "Fertilization": "Apply potassium-based fertilizers to enhance flower production.",
+    "Disease Control": "Check for downy mildew and rust."
+  },
+  "Seed Development": {
+    "Days": "91-110",
+    "Watering": "Reduce watering slightly but do not let the soil dry out completely.",
+    "Bird Protection": "Use nets or scarecrows to prevent birds from eating the seeds.",
+    "Pest Control": "Monitor for seed-eating insects like sunflower moths."
+  },
+  "Ripening": {
+    "Days": "111-120",
+    "Moisture Reduction": "Reduce irrigation to allow seeds to mature properly.",
+    "Harvest Readiness": "Seeds are ready when the back of the flower head turns yellow-brown."
+  },
+  "Harvesting": {
+    "Days": "121-130",
+    "Harvesting Method": "Cut flower heads when seeds are fully mature and dry.",
+    "Threshing": "Manually or mechanically separate seeds from flower heads.",
+    "Drying": "Sun-dry seeds to reduce moisture for storage."
+  },
+  "Post-Harvest Processing": {
+    "Cleaning": "Remove debris and damaged seeds before storage.",
+    "Storage": "Keep seeds in a dry, cool place to prevent spoilage.",
+    "Oil Extraction": "Process seeds for sunflower oil or sell as bird feed and livestock feed."
+  },
+  "Marketing & Sales": {
+    "Distribution": "Sell seeds to local markets, oil mills, or export buyers.",
+    "Value Addition": "Produce sunflower oil, roasted seeds, or snack products."
+  }
+}
+
+---------------------------------------------------Tea---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+
+{
+  "Land Preparation": {
+    "Days": "1-30",
+    "Site Selection": "Choose well-drained, slightly acidic soil with an elevation between 600-2000m.",
+    "Clearing & Plowing": "Clear land of weeds and debris, plow to loosen soil for better root growth.",
+    "Soil Enrichment": "Apply organic manure, compost, or well-decomposed farmyard manure."
+  },
+  "Planting": {
+    "Days": "31-60",
+    "Seed Selection": "Use high-yield, disease-resistant tea plant varieties.",
+    "Nursery Preparation": "Grow seedlings in a shaded nursery for 4-6 months before transplanting.",
+    "Transplanting": "Plant saplings at a spacing of 1-1.5 meters apart in rows.",
+    "Mulching": "Apply organic mulch to retain moisture and control weeds."
+  },
+  "Early Growth": {
+    "Days": "61-180",
+    "Watering": "Irrigate regularly, especially during dry periods.",
+    "Shade Management": "Use shade trees to protect young plants from excessive sunlight.",
+    "Weed Control": "Regularly remove weeds manually or with herbicides.",
+    "Fertilization": "Apply nitrogen-rich fertilizers to promote growth."
+  },
+  "Vegetative Growth": {
+    "Months": "6-24",
+    "Irrigation": "Water tea plants consistently to maintain soil moisture.",
+    "Pruning": "Perform light pruning to encourage bushy growth and increase leaf production.",
+    "Pest & Disease Control": "Monitor for tea mosquito bugs, leaf rollers, and fungal infections.",
+    "Fertilization": "Apply phosphorus and potassium fertilizers periodically."
+  },
+  "Mature Plant Growth": {
+    "Years": "2-4",
+    "First Harvest": "Tea plants are ready for first plucking after 2-3 years.",
+    "Continuous Growth": "Plants continue growing, requiring regular pruning and fertilization.",
+    "Watering": "Ensure adequate soil moisture, but avoid waterlogging.",
+    "Disease Prevention": "Use organic pesticides or integrated pest management (IPM) techniques."
+  },
+  "Harvesting & Plucking": {
+    "Months": "Throughout the year",
+    "Harvesting Method": "Hand-pick the top two leaves and a bud every 7-15 days.",
+    "Best Season": "Plucking is most productive during warm, humid seasons.",
+    "Quality Control": "Ensure leaves are young and tender for the best tea flavor."
+  },
+  "Processing": {
+    "Withering": "Spread leaves in a cool, airy room to remove excess moisture.",
+    "Rolling": "Roll leaves to release natural oils and enhance flavor.",
+    "Fermentation": "Allow oxidation for black tea; skip for green tea.",
+    "Drying": "Use hot air to dry leaves and stop oxidation."
+  },
+  "Packaging & Storage": {
+    "Sorting": "Separate leaves based on size and quality.",
+    "Packing": "Pack in moisture-proof containers to maintain freshness.",
+    "Storage": "Store in a dry, cool place away from direct sunlight."
+  },
+  "Marketing & Sales": {
+    "Distribution": "Sell in local markets, export to tea factories, or package for retail.",
+    "Value Addition": "Produce flavored, organic, or specialty teas for higher market value."
+  }
+}
+
+---------------------------------------------------Guava---------------------------------------------------
+-----------------------------------------------------------------------------------------------------------
+{
+  "Land Preparation": {
+    "Days": "1-15",
+    "Site Selection": "Choose well-drained soil with pH between 5.5-7.5 and good sunlight exposure.",
+    "Land Clearing": "Remove weeds, rocks, and debris.",
+    "Plowing & Leveling": "Plow the soil to improve aeration and root penetration.",
+    "Soil Enrichment": "Add organic compost or farmyard manure for fertility."
+  },
+  "Planting": {
+    "Days": "16-30",
+    "Variety Selection": "Choose high-yielding varieties like Allahabad Safeda, L-49, or Thai guava.",
+    "Propagation": "Use seeds, grafting, or air layering for planting.",
+    "Spacing": "Plant saplings 5-7 meters apart for proper growth.",
+    "Watering": "Provide light irrigation after planting.",
+    "Mulching": "Apply organic mulch to retain soil moisture and reduce weed growth."
+  },
+  "Early Growth": {
+    "Months": "1-6",
+    "Irrigation": "Water regularly, especially during dry spells.",
+    "Weed Control": "Remove weeds manually or use eco-friendly herbicides.",
+    "Fertilization": "Apply nitrogen-rich fertilizers to promote vegetative growth.",
+    "Pest & Disease Management": "Monitor for common pests like fruit flies and aphids, and use organic pesticides."
+  },
+  "Vegetative Growth": {
+    "Months": "6-24",
+    "Pruning": "Remove weak or overcrowded branches to enhance fruiting.",
+    "Irrigation": "Water every 7-10 days, depending on soil moisture levels.",
+    "Fertilization": "Apply phosphorus and potassium fertilizers for stronger roots and branches.",
+    "Pest & Disease Control": "Spray neem oil or fungicides to prevent fungal infections."
+  },
+  "Flowering & Fruiting": {
+    "Months": "24-36",
+    "Flowering": "Guava trees start flowering after 2 years.",
+    "Pollination": "Bees and wind assist in natural pollination.",
+    "Fruit Thinning": "Remove excess fruits to improve the size and quality of remaining fruits.",
+    "Watering": "Maintain moisture but avoid waterlogging.",
+    "Fertilization": "Apply potassium and micronutrient fertilizers for better fruit development."
+  },
+  "Fruit Maturity & Harvesting": {
+    "Months": "36-48",
+    "Harvesting Time": "Fruits mature within 90-150 days after flowering.",
+    "Harvesting Method": "Hand-pick fruits when they turn yellowish-green and firm.",
+    "Yield": "Each tree can yield 50-100 kg of fruits annually."
+  },
+  "Post-Harvest Handling": {
+    "Sorting": "Sort fruits based on size and ripeness.",
+    "Cleaning": "Wash fruits to remove dirt and pesticide residues.",
+    "Storage": "Store at 8-10°C to extend shelf life.",
+    "Packaging": "Use perforated plastic crates or baskets for transportation."
+  },
+  "Marketing & Sales": {
+    "Distribution": "Sell in local markets, wholesale, or export.",
+    "Value Addition": "Use guava for juices, jams, and dried fruit products."
+  }
+}
+
+

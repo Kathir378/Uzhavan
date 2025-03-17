@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info - Uzhavan</title>
+    <link rel="stylesheet" href="../Css/root.css">
+    <link rel="icon" href="../image/icons/logo3Square.png">
+    <link rel="stylesheet" href="../Css/userInfo.css">
+    <script src="https://kit.fontawesome.com/1e7ec9ba98.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/bf8b05a135.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Left Footer -->
+        <footer class="footer">
+            <div class="leftCorner">
+                <img src="../image/icons/logo2.png" id="logo" alt="Image Description">
+            </div>
+            <div class="footerIcon">
+                <a onclick='rootColor("Home")' href="../Html/calendar.html">
+                    <i class="fa-solid fa-house" id="Home" style="color: rgb(168, 205, 137);"></i>
+                </a>
+
+                <a onclick='rootColor("Advisor")' href="../Html/cropAdvisor.html">
+                    <i class="fa-solid fa-robot" id="Advisor" style="color: rgb(168, 205, 137);"></i>
+                </a>
+                <a onclick='rootColor("Pratice")' href="../Html/availableCrops.html">
+                    <i class="fa-brands fa-leanpub" id="Pratice" style="color: rgb(168, 205, 137);"></i>
+                </a>
+                <a onclick='rootColor("Shop")' href="../Html/shop.html">
+                    <i class="fa-solid fa-shop" id="Shop" style="color: rgb(168, 205, 137);"></i>
+                </a>
+            </div>
+        </footer>
+        <!-- Main Content -->
+        <div class="lapDiv">
+            <!-- Header -->
+            <header class="header">
+                <div class="logos">
+                    <h1>Uzhavan</h1>
+                </div>
+                <div class="header-actions">
+                    <!-- <button id="closeBtn">Close</button> -->
+                    <!-- <button id="logoutBtn" onclick="goToLoginPage()">Logout</button> -->
+                    <button onclick="goToLoginPage()" class="Btn">
+                       <div class="sign"><i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i></div>
+                       <div class="text">Logout</div>
+                    </button>
+                </div>
+            </header>
+            <!-- User Info Section -->
+            <section class="user-info-container">
+                <div class="profile-card">
+                    <!-- Profile Header -->
+                    <div id="exit"><a href="../Html/calendar.html"><i class="fa-solid fa-xmark"></i></a></div>
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            <i class="fa-solid fa-user-circle"></i>
+                        </div>
+                        <h2>User Profile</h2>
+                    </div>
+
+                    <!-- Profile Details -->
+                    <div class="profile-details">
+                        <form id="userForm">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="number">Mobile Number:</label>
+                                <input type="text" id="number" name="number" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" readonly>
+                                <p id="changedUpdates"></p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Change Password Section -->
+                    <div class="change-password-section">
+                        <p id="togglePasswordFields">Change Password?</p>
+                        <form id="passwordForm" style="display: none;">
+                            <div class="form-group">
+                                <label for="oldPassword">Old Password:</label>
+                                <input type="password" id="oldPassword" name="oldPassword" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="newPassword">New Password:</label>
+                                <input type="password" id="newPassword" name="newPassword" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirm New Password:</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                                <p id="passNotMatch"></p>
+                            </div>
+                            <button id="update-password-btn">Update Password</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../JavaScript/root.js"></script>
+    <script src="../JavaScript/userInfo.js"></script>
+</body>
+
+</html>

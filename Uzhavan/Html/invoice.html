@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e7ec9ba98.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/bf8b05a135.js" crossorigin="anonymous"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="../Css/invoice.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+        <div class="invoice-body">
+            <header class="header">
+                <h1>Basic Invoice</h1>
+                <div id="crop-invoice">selected crop</div>
+            </header>
+            <section class="section">
+                 <div id="invoice-full">
+                    <table id="invoice">
+                        <thead>
+                            <tr >
+                                <th style="text-align: center"  rowspan="3" class="table-body landInvoice">Farm Land Invoice</th>
+                                <th   style="text-align: right"  class="table-body min white ">Land Name  :</th>
+                                <th   style="text-align: left" class="table-body max white">SAMPLE NAME FOR LAND</th>
+                            </tr>
+                            <tr >
+                                <th   style="text-align: right" class="table-body min white">Crop Name  :</th>
+                                <th  style="text-align: left" class="table-body max white">Tomato</th>
+                            </tr>
+
+                            <tr >
+                                <th   style="text-align: right" class="table-body min white">Pin code  :</th>
+                                <th  style="text-align: left" class="table-body max white">627851</th>
+                            </tr>
+                            <tr >
+                                <th  class="table-heading">Expense Category</th>
+                                <th  class="table-heading min ">Minimum Amount</th>
+                                <th  class="table-heading max ">Maximum Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-body">
+                                <td class="table-body heading">Land Preparation</td>
+                                <td style="text-align: center" class="table-body money" id="min-land_Preparation">₹ 1234567</td>
+                                <td style="text-align: center" class="table-body money" id="max-land_Preparation">₹ 12345678</td>
+                            </tr>
+                            <tr class="table-body">
+                                <td class="table-body heading" >Seeds</td>
+                                <td  style="text-align: center" class="table-body money" id="min-seeds">₹ 12345</td>
+                                <td  style="text-align: center" class="table-body money" id="max-seeds">₹ 23456</td>
+                            </tr>
+                            <tr class="table-body">
+                                <td  class="table-body heading">Sowing</td>
+                                <td  style="text-align: center" class="table-body money" id="min-sowing"> ₹ 55665</td>
+                                <td style="text-align: center"  class="table-body money" id="max-sowing">₹ 8989</td>
+                            </tr>
+                            <tr class="table-body">
+                                <td class="table-body heading" >Fertilizers</td>
+                                <td style="text-align: center"  class="table-body money" id="min-fertilizers"> ₹ 90921</td>
+                                <td  style="text-align: center" class="table-body money" id="max-fertilizers">₹ 45678</td>
+                            </tr>
+                            <tr class="table-body">
+                                <td class="table-body heading" >Pesticides/Herbicides</td>
+                                <td style="text-align: center"  class="table-body money" id="min-pesticides_Herbicides"> ₹ 5467890</td>
+                                <td style="text-align: center" class="table-body money" id="max-pesticides_Herbicides">₹ 5467890</td>
+                            </tr>
+                            <tr class="table-body">
+                                <td  class="table-body heading">Irrigation</td>
+                                <td style="text-align: center" class="table-body money" id="min-irrigation"> ₹ 45678</td>
+                                <td style="text-align: center" class="table-body money" id="max-irrigation"> ₹ 456789</td>
+                            </tr>
+                            <tr class="table-body">
+                                <td  class="table-body heading" >Labor</td>
+                                <td style="text-align: center" class="table-body money" id="min-labor">₹ 3456789</td>
+                                <td  style="text-align: center" class="table-body money" id="max-labor"> ₹ 35467890</td>
+                            </tr>
+                            <tr class="table-body">
+                                <td  class="table-body heading">Miscellaneous</td>
+                                <td style="text-align: center"  class="table-body money" id="min-miscellaneous">₹ 3456789</td>
+                                <td  style="text-align: center" class="table-body money" id="max-miscellaneous">₹ 456789</td>
+                            </tr>
+                            <tr class="table-body">
+                                <td  class="table-body heading" >Harvesting</td>
+                                <td  style="text-align: center" class="table-body money" id="min-harvesting">₹ 3456789</td>
+                                <td  style="text-align: center" class="table-body money" id="max-harvesting">₹ 4356789</td>
+                            </tr>
+                            <tr class="table-body">
+                                <td   class="table-body" style="font-weight: 900; letter-spacing: 1.5px;text-align: right">Grand Total</td>
+                                <td  style="text-align: center"class="table-body money" id="min-grandTotal">₹ 4567890</td>
+                                <td  style="text-align: center" class="table-body money"id="max-grandTotal">₹ 23456789</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="invoiceButtons">
+                    <div class="forCenterButton">
+                         <button class="invoiceButton" id="exit" >Exit</button>
+                         <button class="invoiceButton" id="download" onclick="download()">Download</button>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footerIcon">
+                  
+                <a href="../Html/calendar.html  ">  <i class="fa-solid fa-house " style="color: #ffffff;"></i></a>
+             
+                <!-- <a href="../Html/calendar.html ">  <i class="fa-solid fa-seedling " style="color: #ffffff;"></i></i></a> -->
+                <a href="../Html/cropAdvisor.html"> <i class="fa-solid fa-robot " style="color: #ffffff;"></i></a>
+                <a href="../Html/availableCrops.html"><i class="fa-brands fa-leanpub " style="color: #ffffff;"></i></a>
+                <a href="../Html/shop.html "> <i class="fa-solid fa-shop " style="color: #ffffff;"></i>  </i></a>
+                </div>
+            </footer>
+        </div>
+    <script src="../JavaScript/calendar.js"></script>
+</body>
+</html>

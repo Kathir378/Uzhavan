@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Suggestion</title>
+    <link rel="stylesheet" href="../Css/CropSuggection.css">
+    <link rel="stylesheet" href="../Css/root.css">
+    <script src="https://kit.fontawesome.com/1e7ec9ba98.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/bf8b05a135.js" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="icon" href="../image/icons/logo3Square.png">
+
+
+</head>
+<body>
+    <div class="container">
+        <footer class="footer">
+            <div class="leftCorner">
+                <img src="../image/icons/logo2.png" id="logo" alt="Image Description">
+            </div>
+            <div class="footerIcon">
+                <a onclick='rootColor("Home")' href="../Html/calendar.html  ">
+                    <i class="fa-solid fa-house " id="Home" style="color: rgb(168, 205, 137);"></i></a>
+           
+                <!-- <a onclick='rootColor("Calendar")' href="../Html/calendar.html "> -->
+                    <!-- <i class="fa-solid fa-seedling" id="Calendar" style="color: rgb(168, 205, 137);"></i></a> -->
+                <a onclick='rootColor("Pratice")'
+                    href="../Html/availableCrops.html"><i class="fa-brands fa-leanpub " id="Pratice" style="color: rgb(168, 205, 137);"></i></a>
+                <a onclick='rootColor("Advisor")' href="../Html/cropAdvisor.html">
+                    <i class="fa-solid fa-robot" id="Advisor"  style="color: rgb(168, 205, 137);"></i></a>
+                         <a onclick='rootColor("Shop")' href="../Html/shop.html "> <i id="Shop" class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(168, 205, 137);"></i></a>
+            </div>
+        </footer>
+        <div class="lapDiv">
+            <header class="header">
+                <div class="logos currentLoc heading1">
+                    <p>Crop Suggestion</p>
+                    <input id="cropSearch" type="search">
+                </div>
+                <div class="logos option">
+                    <!-- <i onclick="search()" id="searchIcon"" class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i> -->
+                    <!-- <i class="fa-solid fa-cart-shopping fa-sm" style="color: #ffffff;"></i> -->
+                     <a id="dropDown" onclick="notifShow()">
+                        <i class="fa-solid fa-bell fa-flip-horizontal fa-sm" style="color: #ffffff;"></i>
+                    </a>
+                    <div id="notificationDropdown" class="notification-content" ></div>
+                     
+                            <a href="userInfo.html" style="text-decoration: none; color:white"> <i class="fa-solid fa-circle-user"></i></a>
+                </div>
+            </header>
+            <section class="section">
+                <div class="main-content">
+                    <section class="crops-section">
+                        <!-- <div class="pinDetails">
+                            <p>District: Tenkasi</p>
+                            <p>Soil type: Vertisol</p>
+                            <p>Temperature: 26.2C</p>
+                            <p>Humidity: 45%</p>
+                        </div> -->
+                        <div id="crops-fill" class="crops-full">
+                            <div id="furtureDetails" class="furtureDetails">
+
+                                <!-- <div class="currentCropHeader">
+                                    <div onclick="backToSuggection()" class="backtoSuggestion">
+                                        <i class="fa-solid fa-circle-xmark fa-xl" style="color: #ffffff;"></i>
+                                    </div>
+                                    <div class="name ">Apple</div>
+                                    <div onclick="giveMeEstimation()" class="estimation">
+                                        <i class="fa-solid fa-file-invoice-dollar fa-xl" style="color: #ffffff;"></i>
+                                    </div>
+                                </div> -->
+                                <section id="invoiceContainer" class="invoiceContainer">
+                                    <div id="whatNeedToDo">
+
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </section>
+                    <aside class="legend">
+                        <h3>About</h3>
+                        <ul>
+                            <li><span class="color-box" style="background-color: #1b5e20;"></span>High Suitability
+                                (90% - 100%)</li>
+                            <li><span class="color-box" style="background-color: #2e7d32;"></span>Very Good (80% - 89%)
+                            </li>
+                            <li><span class="color-box" style="background-color: #66bb6a;"></span>Good (70% - 79%)</li>
+                            <li><span class="color-box" style="background-color: #d4e157;"></span>Fair (60% - 69%)</li>
+                            <li><span class="color-box" style="background-color: #fdd835;"></span>Moderate (50% - 59%)
+                            </li>
+                            <li><span class="color-box" style="background-color: #fb8c00;"></span>Poor (40% - 49%)</li>
+                            <li><span class="color-box" style="background-color: #e64a19;"></span>Very Poor (30% - 39%)
+                            </li>
+                            <li><span class="color-box" style="background-color: #d32f2f;"></span>Low Suitability
+                                (20% - 29%)</li>
+                            <li><span class="color-box" style="background-color: #b71c1c;"></span>Very Low (10% - 19%)
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../JavaScript/cropSuggestion.js"></script>
+    <script src="../JavaScript/root.js"></script>
+</body>
+</html>
+

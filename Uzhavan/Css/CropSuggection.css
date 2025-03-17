@@ -1,0 +1,571 @@
+/* General Styles */
+* {
+    font-family: "Open Sans", serif;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+#invoiceContainer{
+    width:100%;
+    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left-pad{
+    padding-left: 47px !important;
+}
+
+#whatNeedToDo{
+    width: 100%;
+}
+#invoice-full{
+    width:80%;
+}
+body {
+    background: linear-gradient(to bottom, #F1F8E9, #C8E6C9);
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Header */
+header h2 {
+    font-size: 1.5rem;
+    flex: 1;
+    text-align: center;
+}
+
+header i {
+    cursor: pointer;
+    font-size: 25px;
+    transition: transform 0.2s ease-in-out;
+}
+
+header i:hover {
+    transform: scale(1.2);
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.crops-section {
+    flex-grow: 1;
+    padding: 2% 5% 5% 5%;
+    overflow-y: auto;
+}
+
+.crops-section::-webkit-scrollbar{
+    display: none;
+}
+
+.crops-full {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 56px;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+/* .pinDetails{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+    font-weight: 500;
+} */
+
+/* Pin Details Section */
+.pinDetails {
+    width: 100%;
+    background-color: #254222; /* Dark Green background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    gap: 15px;
+    color: #ece2b1; /* Light Beige text */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pinDetails:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pinDetails p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pinDetails p::before {
+    content: "✔"; /* Checkmark icon */
+    font-size: 20px;
+    color: #99cc66; /* Light Green */
+}
+
+/* Key Feature Highlight */
+/* .pinDetails::before {
+    content: "Key Feature: Land Details";
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #99cc66;
+    text-align: center;
+    border-bottom: 2px solid #99cc66;
+} */
+
+.crop-container {
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(to bottom, #ffffff, #e8f5e9);
+    border-radius: 15px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    height: 300px;
+}
+
+.crop-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    /* height: 100% !important; */
+}
+
+.crop-top {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.crop-img {
+    width: 100%;
+    height: 100%;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+    background-size: cover;
+}
+
+.crop-container:hover .crop-img {
+    transform: scale(1.1);
+}
+
+.crop-bottom {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.crop-name {
+    font-weight: 600;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+    width: 80%;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    overflow: visible;
+    position: relative;
+    margin-bottom: 10px; /* Space for percentage text */
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    transition: width 2s ease;
+    border-radius: 5px;
+}
+
+.progress-text {
+    position: absolute;
+    top: 10px; /* Position below the bar */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.6rem; /* Slightly larger text */
+    color: #4CAF50; /* More visible color */
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* Legend */
+.legend {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-left: 1px solid #ddd;
+    padding: 5% 30px;
+    box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.legend h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.legend ul {
+    list-style: none;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+    color: #333;
+}
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+/* Background Elements */
+.background-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.leaf {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 10s infinite ease-in-out alternate;
+}
+
+.leaf-1 {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://via.placeholder.com/100');
+    top: 10%;
+    left: 10%;
+    animation-duration: 8s;
+}
+
+.leaf-2 {
+    width: 150px;
+    height: 150px;
+    background-image: url('https://via.placeholder.com/150');
+    top: 30%;
+    right: 15%;
+    animation-duration: 12s;
+}
+
+.leaf-3 {
+    width: 120px;
+    height: 120px;
+    background-image: url('https://via.placeholder.com/120');
+    bottom: 5%;
+    left: 20%;
+    animation-duration: 10s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .legend {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding: 15px;
+    }
+
+    .crops-full {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .crops-full {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Future Details Section */
+.furtureDetails {
+width: 100%;
+  height: auto;
+  background-color: #A5D6A7;
+  border-radius: 10px;
+  padding: 2.4%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.currentCropHeader {
+    width: 100%;
+    height: 2.5em;
+    background-color: #388E3C; /* Dark green background */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3em;
+    color: white;
+    padding: 0 10px;
+}
+
+.backtoSuggestion, .estimation {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.name {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.boxForExplaination {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 9px;
+    padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    font-weight: 600;
+    color: #2E7D32; /* Dark green color */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.paragraph {
+    margin-top: 1%;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+}
+
+#acceptingTheCrop {
+    width: 12em;
+    height: 50px;
+    border: 4px solid #81C784; /* Light green border */
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border-radius: 50px;
+    margin: 5% 5% 5% 40%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#acceptingTheCrop:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+/* Invoice Styles */
+#invoice {
+    width: 90%;
+    max-width: 900px;
+    /* margin: 0 auto; */
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30em;
+    margin: 5%;
+}
+
+thead {
+    background: linear-gradient(135deg, #5D8736, #A1CB4C);
+    color: white;
+    text-align: left;
+}
+
+thead th {
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #e1f7c5;
+    transition: 0.3s;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.landInvoice {
+    font-size: 40px;
+    font-weight: 700;
+    color: #444;
+    text-transform: uppercase;
+    border-right: 2px solid #fff;
+
+}
+
+#farmText{
+    font-size: 26px;
+}
+
+.table-heading {
+    background: #5D8736;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.money {
+    font-weight: 600;
+    color: #008000;
+}
+
+.total-row {
+    background: #5D8736;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.min, .max {
+    width: 14em;
+    padding: 9px;
+}
+
+.invoiceButtons {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.invoiceButton {
+    width: 8em;
+    height: 2em;
+    border: 2px solid #81C784; /* Light green border */
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.invoiceButton:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+
+
+
+.farmDetailLi{
+  /* background-color: red; */
+ /* paddi: 2em; */
+
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/1e7ec9ba98.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/bf8b05a135.js" crossorigin="anonymous"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/weather.css">
+    <link rel="stylesheet" href="../Css/root.css">
+    <title>Calendar</title>
+    <link rel="icon" href="../image/icons/logo3Square.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <footer class="footer">
+            <div class="leftCorner">
+                <img src="../image/icons/logo2.png" id="logo" alt="Logo">
+            </div>
+            <div class="footerIcon">
+                <a onclick='rootColor("Home")' href="../Html/calendar.html">
+                    <i class="fa-solid fa-house " id="Home"></i></a>
+                <a onclick='rootColor("Shop")' href="../Html/shop.html">
+                    <i id="Shop" class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                <a onclick='rootColor("Pratice")'
+                    href="../Html/availableCrops.html"><i class="fa-brands fa-leanpub " id="Pratice"></i></a>
+                <a onclick='rootColor("Advisor")' href="../Html/cropAdvisor.html">
+                    <i class="fa-solid fa-robot" id="Advisor"></i></a>
+            </div>
+        </footer>
+
+        <div class="lapDiv">
+            <header class="header">
+                <div class="logos currentLoc heading1">
+                    <p>Calendar</p>
+                    <input id="cropSearch" type="search" placeholder="Search Crops">
+                </div>
+                <div class="logos option">
+                    <a id="dropDown" onmouseover="notifShow()">
+                        <i class="fa-solid fa-bell fa-flip-horizontal fa-sm"></i>
+                    </a>
+                    <div id="notificationDropdown" class="notification-content" onmouseleave="notifHide()"></div>
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+            </header>
+            <div id="subHeader">
+               <div><input type="text"  id="zc-projectListSearch" placeholder="Search" autocomplete="off" value=""></div>
+               <div><i class="fa-regular fa-filter"></i></div>
+            </div>
+            <section id="farmDetails">
+                <!-- <div class="noFarmLand">No farm added</div> -->
+                <div class="farmLands">
+                    <div class="logo"></div>
+                    <!-- <img href='../image/furitebackground/Apple.png'> -->
+                    <div>
+                        <h1>Farm Name</h1>
+                      
+                    </div>
+                    <div>
+                          <p>crop name</p>
+                    </div>
+                    <div class="progress-container">
+                        <svg width="100" height="100">
+                            <circle class="progress-bg" cx="55" cy="55" r="40" stroke="#e0e0e0"></circle>
+                            <circle class="progress-bar" cx="55" cy="55" r="40" stroke="#3498db"></circle>
+                        </svg>
+                        <div class="progress-text">0%</div>
+                    </div>
+                    <div></div>
+                    <div class="dustbin"><i class="fa-solid fa-ellipsis-vertical" style="color: #00000"></i></div>
+                </div>
+                <!-- <div id="plus"><i class="fa-solid fa-plus" style="color: #77767b;"></i></div> -->
+            </section>
+            <!-- Weather Section -->
+            <!-- <div id="#wth">
+             <div class="container">
+        <h2>Weather in <span id="city">Chennai</span></h2>
+
+        
+        <h3>Today's Weather</h3>
+        <div class="weather-today">
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <div class="details">
+                <p><strong>Temp:</strong> <span id="temperature">--°C</span></p>
+                <p><strong>Humidity:</strong> <span id="humidity">--%</span></p>
+                <p><strong>Wind:</strong> <span id="wind">-- km/h</span></p>
+                <p><strong>Condition:</strong> <span id="description">---</span></p>
+            </div>
+        </div>
+        
+
+        
+        <h3>7-Day Forecast</h3>
+        <div class="forecast-container" id="forecast"></div>
+
+        <input type="text" id="cityInput" placeholder="Enter city">
+        <button onclick="updateCity()">Get Weather</button>
+    </div>
+    </div> -->
+        </div>
+    </div>
+    <script src="../JavaScript/root.js"></script>
+    <script src="../JavaScript/weather.js"></script>
+
+</body>
+
+</html>

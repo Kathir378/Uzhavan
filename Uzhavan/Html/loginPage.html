@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FarmMan</title>
+    <link rel="stylesheet" href="../Css/loginPage.css">
+    <script src="https://kit.fontawesome.com/1e7ec9ba98.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Side (Image) -->
+        <div class="left">
+            <img src="../image/simpleDesign/backgroundImage.png" alt="Green Leaves">
+        </div>
+
+        <!-- Right Side (Login Form) -->
+        <div class="right">
+            <div class="login-box">
+                <h2 class="logo"><i class="fas fa-leaf"></i>Uzhavan</h2>
+                <!-- <h2 id="welcomeWords">Hello, Welcome Back </h2> -->
+                <p id="loginToManage">Login to manage your account</p>
+                <div class="forLogo">
+                    <div class="logo"></div>
+                </div>
+                <div class="details">
+                    <label class="label1" for="name" >Name<a id="nameError"></a></label>
+                    <input id="username" class="inputBox1 hidden" type="text" placeholder="Enter your Name" name="name" required>
+
+                    <label class="label" for="email">Email<a id="emailError"></a> </label>
+                    <input id="email" class="inputBox" type="email" placeholder="Enter your Email" name="email" required>
+
+                    <label class="label1" for="name" >Mobile Number<a id="mobileError"></a> </label>
+                    <input id="mobileNumber" class="inputBox1 hidden" type="text" placeholder="Enter your Mobile Number" name="number" maxlength="10" required>
+
+                    <label class="label" for="password">Password<a id="passwordError"></a>  </label>
+                    <input id="password" class="inputBox" type="password" placeholder="Enter your Password" name="password" required>
+                </div>
+                <div id="loginButton">
+                    <div id="userInfo" class="forInValid">please enter the valid input</div>
+                    <div class="entryOption">
+                        <!-- <button type="submit" class="login-btn">Login</button> -->
+
+                        <button  type="submit"  onclick="login()" id="Login" > Login</button>
+                        <button  type="submit"  onclick="signup()" id="SignUp" >Sign up</button>
+                    </div>
+                </div>
+                <div id="navigater" onclick="nag()"><span class="info">Don't have an account ? </span>Sign up</div>
+                <!-- <form action="#">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+
+                    <button type="submit" class="login-btn">Login</button>
+                </form> -->
+
+                <!-- <div class="divider">Or</div> -->
+
+                <div class="social-icons"></div>
+                <!-- <a class="googleIcon" href="#"></a> -->
+                <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+                <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+            </div>
+
+            <!-- <p class="signup">Don't have an account? <a href="#">Signup</a></p> -->
+        </div>
+    </div>
+    </div>
+    <script src="../JavaScript/loginPage.js"></script>
+</body>
+
+</html>

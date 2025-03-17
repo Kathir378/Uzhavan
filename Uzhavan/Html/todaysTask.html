@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todays Task</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1e7ec9ba98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Css/root.css">
+    <link rel="stylesheet" href="../Css/todaysTask.css">
+</head>
+
+<body>
+    <div class="container">
+        <footer class="footer">
+            <div class="leftCorner">
+                <img src="../image/icons/logo2.png" id="logo" alt="Image Description">
+            </div>
+            <div class="footerIcon">
+                <a onclick='rootColor("Home")' href="../Html/calendar.html ">
+                    <i class="fa-solid fa-house " id="Home" style="color: rgb(168, 205, 137);"></i></a>
+                <a onclick='rootColor("Pratice")'
+                    href="../Html/availableCrops.html"><i class="fa-brands fa-leanpub " id="Pratice" style="color: rgb(168, 205, 137);"></i></a>
+                <a onclick='rootColor("Advisor")' href="../Html/cropAdvisor.html">
+                    <i class="fa-solid fa-robot" id="Advisor"  style="color: rgb(168, 205, 137);"></i></a>
+                <a onclick='rootColor("Shop")' href="../Html/shop.html ">
+                    <i id="Shop" class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(168, 205, 137);"></i></a>
+            </div>
+        </footer>
+        <div class="lapDiv">
+            <header class="header">
+                <div class="logos currentLoc heading1">
+                    <p>Todays Task</p>
+                    <input id="cropSearch" type="search">
+                </div>
+                <div class="logos option">
+                    <!-- <p id="currentDay" class="dayDetail"></p> -->
+                    <!-- <p id="hasvestDay" class="dayDetail"></p> -->
+                    <!-- <button onclick="pageChange()" id="pageChanger" class="back-button">Detail Page</button> -->
+                    <!-- <i onclick="search()" id="searchIcon"" class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i> -->
+                    <!-- <i class="fa-solid fa-cart-shopping fa-sm" style="color: #ffffff;"></i> -->
+    <a id="dropDown" onclick="notifShow()">
+                        <i class="fa-solid fa-bell fa-flip-horizontal fa-sm" style="color: #ffffff;"></i>
+                    </a>
+                    
+                    <a title="User Profile" href="userInfo.html" style="text-decoration: none; color:white">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </a>
+                     <div id="notificationDropdown" class="notification-content" ></div>
+                </div>
+            </header>
+            <section class="section">
+                <div class="forScroll">
+                    <div class="task">
+                        <div class="loader">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="stage">
+                            <p class="stageWord">
+                                <i class="fa-solid fa-circle fa-xs currentLevelCircle "  id="landPre"></i> Land
+                                Preparation
+                            </p>
+                            <p class="stageWord">
+                                <i class="fa-solid fa-circle fa-xs currentLevelCircle "  id="planting"></i> Planting
+                            </p>
+                            <p class="stageWord">
+                                <i class="fa-solid fa-circle fa-xs currentLevelCircle "  id="earlyGrowth"></i> Early
+                                Growth
+                            </p>
+                            <p class="stageWord">
+                                <i class="fa-solid fa-circle fa-xs currentLevelCircle "  id="vegeGrowth"></i> Vegetative
+                                Growth
+                            </p>
+                            <p class="stageWord">
+                                <i class="fa-solid fa-circle fa-xs currentLevelCircle "  id="fruiting"></i> Flowering &
+                                Fruiting
+                            </p>
+                            <p class="stageWord">
+                                <i class="fa-solid fa-circle fa-xs currentLevelCircle "  id="ripening"></i> Ripening
+                            </p>
+                            <p class="stageWord">
+                                <i class="fa-solid fa-circle fa-xs currentLevelCircle "  id="harvesting" ></i>
+                                Harvesting
+                            </p>
+                            <p class="stageWord">
+                                <i class="fa-solid fa-circle fa-xs currentLevelCircle "  id="postHarvest"></i>
+                                Post-Harvest
+                            </p>
+                        </div>
+                    </div>
+                    <div id="cropDetails">
+                        <div class="dayDetailsDiv">
+                            <p id="currentDay" class="dayDetail">Current Day :</p>
+                            <p id="hasvestDay" class="dayDetail">Harvest :</p>
+                        </div>
+                        <div class="nextPageDetail">
+                            <button id="pageChanger"  onclick="pageChange()" class="button">
+                                 Farm facts
+                                <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                    fill-rule="evenodd"
+                                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                                    clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="mainTaskPage" class="mainBox">
+                        <div class="procedureBox">
+                            <div class="procedureHeading past">Task Completed</div>
+                            <div class="taskContainer" id="CompletedWork">
+                               
+                            </div>
+                        </div>
+                        <div class="procedureBox">
+                            <div class="procedureHeading present">Today's Task</div>
+                            <div class="taskContainer" id="todaysWork">
+                            </div>
+                        </div>
+                        <div class="procedureBox">
+                            <div class="procedureHeading future">Next Activity</div>
+                            <div class="taskContainer" id="futureWork">
+                              
+                            </div>
+                        </div>
+                    </div>
+
+                      <div id="OtherDetailPage" class="otherDetails">
+                        <div class="detailPage">
+                            <div class="leftPage">
+                                <div class="card">
+                                    <div class="currentFeature">
+                                        <div class="flip-card">
+                                            <div class="flip-card-inner">
+                                                <div class="flip-card-front">
+                                                    <div id="weatherCard" class="card2">
+                                                        <section class="landscape-section">
+                                                            <div class="sky"></div>
+                                                            <div class="sun"></div>
+                                                            <div class="hill-1"></div>
+                                                            <div class="hill-2"></div>
+                                                            <div class="ocean">
+                                                                <div class="reflection"></div>
+                                                                <div class="reflection"></div>
+                                                                <div class="reflection"></div>
+                                                                <div class="reflection"></div>
+                                                                <div class="reflection"></div>
+                                                                <div class="shadow-hill-1"></div>
+                                                                <div class="shadow-hill-2"></div>
+                                                            </div>
+                                                            <div class="hill-3"></div>
+                                                            <div class="hill-4"></div>
+                                                            <div class="tree-1">
+                                                                <svg stroke-width="0.00064" stroke="#b77873"
+                                                                    fill="#b77873" xml:space="preserve"
+                                                                    viewBox="0 0 64.00 64.00"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                    xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                                                                    version="1.0">
+                                                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                                                        id="SVGRepo_tracerCarrier"></g>
+                                                                    <g id="SVGRepo_iconCarrier">
+                                                                        <path
+                                                                            d="M32,0C18.148,0,12,23.188,12,32c0,9.656,6.883,17.734,16,19.594V60c0,2.211,1.789,4,4,4s4-1.789,4-4v-8.406 C45.117,49.734,52,41.656,52,32C52,22.891,46.051,0,32,0z"
+                                                                            fill="#b77873"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="tree-2">
+                                                                <svg stroke-width="0.00064" stroke="#b77873"
+                                                                    fill="#b77873" xml:space="preserve"
+                                                                    viewBox="0 0 64.00 64.00"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                    xmlns="http://www.w3.org/2000/svg" id="Layer_1"
+                                                                    version="1.0">
+                                                                    <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                                                                    <g stroke-linejoin="round" stroke-linecap="round"
+                                                                        id="SVGRepo_tracerCarrier"></g>
+                                                                    <g id="SVGRepo_iconCarrier">
+                                                                        <path
+                                                                            d="M32,0C18.148,0,12,23.188,12,32c0,9.656,6.883,17.734,16,19.594V60c0,2.211,1.789,4,4,4s4-1.789,4-4v-8.406 C45.117,49.734,52,41.656,52,32C52,22.891,46.051,0,32,0z"
+                                                                            fill="#b77873"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="tree-3">
+                                                                <svg version="1.0" id="Layer_1"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                    viewBox="0 0 64.00 64.00" xml:space="preserve"
+                                                                    fill="#a16773" stroke="#a16773"
+                                                                    stroke-width="0.00064">
+                                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></g>
+                                                                    <g id="SVGRepo_iconCarrier">
+                                                                        <path fill="#a16773"
+                                                                            d="M32,0C18.148,0,12,23.188,12,32c0,9.656,6.883,17.734,16,19.594V60c0,2.211,1.789,4,4,4s4-1.789,4-4v-8.406 C45.117,49.734,52,41.656,52,32C52,22.891,46.051,0,32,0z">
+                                                                        </path>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="filter"></div>
+                                                        </section>
+
+                                                        <section class="content-section">
+                                                            <div class="weather-info">
+                                                                <div class="left-side">
+                                                                    <div class="icon">
+                                                                        <svg stroke="#000000"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            fill="none" viewBox="0 0 24 24">
+                                                                            <g stroke-width="0" id="SVGRepo_bgCarrier">
+                                                                            </g>
+                                                                            <g stroke-linejoin="round"
+                                                                                stroke-linecap="round"
+                                                                                id="SVGRepo_tracerCarrier"></g>
+                                                                            <g id="SVGRepo_iconCarrier">
+                                                                                <path stroke-linecap="round"
+                                                                                    stroke-width="1.5" stroke="#ffffff"
+                                                                                    d="M22 14.3529C22 17.4717 19.4416 20 16.2857 20H11M14.381 9.02721C14.9767 8.81911 15.6178 8.70588 16.2857 8.70588C16.9404 8.70588 17.5693 8.81468 18.1551 9.01498M7.11616 11.6089C6.8475 11.5567 6.56983 11.5294 6.28571 11.5294C3.91878 11.5294 2 13.4256 2 15.7647C2 18.1038 3.91878 20 6.28571 20H7M7.11616 11.6089C6.88706 10.9978 6.7619 10.3369 6.7619 9.64706C6.7619 6.52827 9.32028 4 12.4762 4C15.4159 4 17.8371 6.19371 18.1551 9.01498M7.11616 11.6089C7.68059 11.7184 8.20528 11.9374 8.66667 12.2426M18.1551 9.01498C18.8381 9.24853 19.4623 9.60648 20 10.0614">
+                                                                                </path>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <p id="Descriptionweather">Cloudy</p>
+                                                                </div>
+                                                                <div class="right-side">
+                                                                    <div class="location">
+                                                                        <div>
+                                                                            <svg version="1.0" id="Layer_1"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                                width="72px" height="72px"
+                                                                                viewBox="0 0 64 64" xml:space="preserve"
+                                                                                fill="#ffffff" stroke="#ffffff">
+                                                                                <g id="SVGRepo_bgCarrier"
+                                                                                    stroke-width="0"></g>
+                                                                                <g id="SVGRepo_tracerCarrier"
+                                                                                    stroke-linecap="round"
+                                                                                    stroke-linejoin="round"></g>
+                                                                                <g id="SVGRepo_iconCarrier">
+                                                                                    <path fill="#ffffff"
+                                                                                        d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z">
+                                                                                    </path>
+                                                                                </g>
+                                                                            </svg>
+                                                                            <span id="cityName">Spain</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p id="Day-Date">Monday, 4th May</p>
+                                                                    <p id="temperature" class="temperature">24°C</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="forecast">
+                                                                <div>
+                                                                    <p > HUMIDITY:</p>
+                                                                    <p id="humidity">24°C</p>
+                                                                </div>
+                                                                <div>
+                                                                    <p> WIND SPEED:</p>
+                                                                    <p id="windSpeed">24°C</p>
+                                                                </div>
+                                                                <div class="separator"></div>
+                
+                                                            </div>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="flip-card-back">
+                                                    <div class="card3">
+                                                        <div class="wrapper">
+                                                            <div class="farmHeading">Land Detail </div>
+                                                            <div class="color black">Farm Name<span id="farmName" class="hex">#000000</span>
+                                                            </div>
+                                                            <div class="color eerie">Crop<span id="farmCrop" class="hex">#1b1b1b</span>
+                                                            </div>
+                                                            <div class="color chinese">Progress<span id="farmProgress"  class="hex">#141414</span>
+                                                            </div>
+                                                            <div class="color night">Pincode<span id="farmPincode" class="hex">#2e2e2e</span>
+                                                            </div>
+                                                            <div class="color chinese-white">Date<span id="farmDate" class="hex">#e1e1e1</span>
+                                                            </div>
+                                                            <div class="color anti-flash-white">District<span id="farmDistrict"  class="hex">#f3f3f3</span>
+                                                            </div>
+                                                            <div class="color white">State<span id="farmState"  class="hex">#ffffff</span>
+                                                            </div>
+                                                           
+                                                           </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                               
+
+                            </div>
+                            <div class="rightPage">
+                                <div class="youtubeVideo">
+                                    <iframe id="videoFrame" frameborder="0" width="100%" height="100%" c></iframe>
+                                </div>
+                                <div class="useInputs">
+    <!-- <div class="searchBar"> -->
+                                        <!-- <div class="searchBox">
+
+                                            <input id="neededQuery" class="searchInput" type="text" name="" placeholder="Search something">
+                                            <button onclick="iNeedVideo()" class="searchButton" href="#">
+
+
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+  <g clip-path="url(#clip0_2_17)">
+    <g filter="url(#filter0_d_2_17)">
+      <path d="M23.7953 23.9182L19.0585 19.1814M19.0585 19.1814C19.8188 18.4211 20.4219 17.5185 20.8333 16.5251C21.2448 15.5318 21.4566 14.4671 21.4566 13.3919C21.4566 12.3167 21.2448 11.252 20.8333 10.2587C20.4219 9.2653 19.8188 8.36271 19.0585 7.60242C18.2982 6.84214 17.3956 6.23905 16.4022 5.82759C15.4089 5.41612 14.3442 5.20435 13.269 5.20435C12.1938 5.20435 11.1291 5.41612 10.1358 5.82759C9.1424 6.23905 8.23981 6.84214 7.47953 7.60242C5.94407 9.13789 5.08145 11.2204 5.08145 13.3919C5.08145 15.5634 5.94407 17.6459 7.47953 19.1814C9.01499 20.7168 11.0975 21.5794 13.269 21.5794C15.4405 21.5794 17.523 20.7168 19.0585 19.1814Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"></path>
+    </g>
+  </g>
+  <defs>
+    <filter id="filter0_d_2_17" x="-0.418549" y="3.70435" width="29.7139" height="29.7139" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+      <feOffset dy="4"></feOffset>
+      <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+      <feComposite in2="hardAlpha" operator="out"></feComposite>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_17"></feBlend>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_17" result="shape"></feBlend>
+    </filter>
+    <clipPath id="clip0_2_17">
+      <rect width="28.0702" height="28.0702" fill="white" transform="translate(0.403503 0.526367)"></rect>
+    </clipPath>
+  </defs>
+</svg>
+                     
+
+            </button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="../JavaScript/todaysTask.js"></script>
+    <script src="../JavaScript/root.js"></script>
+</body>
+
+</html>

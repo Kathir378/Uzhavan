@@ -1,0 +1,295 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+
+}
+
+body {
+    background-color: #F1F8E9;
+    /* Soft natural background */
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+header h2 {
+    font-size: 1.5rem;
+    flex: 1;
+    text-align: center;
+}
+
+.fa-xmark {
+    transition: transform 0.3s ease;
+}
+
+.fa-xmark:hover {
+    transform: scale(1.2);
+}
+
+.details {
+    flex: 1;
+    /* background-color: red; */
+    width: 100%;
+    height:  calc(100vh - 65px);
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../image/simpleDesign/Coconutgarden.jpg");
+    background-size: cover;
+    background-position: center;
+    /* animation: slideBackground 40s infinite alternate ease-in-out; */
+}
+
+#areaLabel{
+    font-size: 20px;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+#details-holder {
+    width: 100%;
+    max-width: 480px;
+    background: rgba(231,247,173,0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 2px solid #8D6E6300;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    /* background-color: red; */
+    /* display: block; */
+}
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #050;;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label i {
+    color: #050;
+}
+
+input,
+select {
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #8D6E63;
+    /* Earthy brown */
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 1.1rem;
+    background: #FFF;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus,
+select:focus {
+    border-color: #FBC02D;
+    /* Sunlight Yellow */
+    outline: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 40%;
+    height: 50px;
+    background: #4CAF50;
+    /* Primary Green */
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+#submitButton1{
+     width: 40%;
+    height: 50px;
+    background: #af4c4c;
+    /* Primary Green */
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    background: #2E7D32;
+    /* Dark Green */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#selectedAreaType{
+    font-size: 18px;
+}
+
+#farmError{
+    color: #e81e1e;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    display: none;
+
+}
+
+#inputContainer {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    /* background-color: red; */
+}
+
+
+/* Error Message Styles */
+.error-message {
+    color: red;
+    font-size: 0.6rem;
+    display: none;
+    align-self: flex-end;
+}
+
+.error-message.active {
+    display: inline-block;
+}
+
+span{
+    font-size: 16px;
+}
+
+
+option{
+    height: 15px;
+    /* background-color: red; */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    #details-holder {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input,
+    select {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    button {
+        height: 45px;
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header h2 {
+        font-size: 1.4rem;
+    }
+
+    #details-holder {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input,
+    select {
+        height: 38px;
+        font-size: 14px;
+    }
+
+    button {
+        height: 42px;
+        font-size: 15px;
+    }
+}
+.icon{
+    color:#148904;
+}

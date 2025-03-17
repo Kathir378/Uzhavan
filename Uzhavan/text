@@ -1,0 +1,119 @@
+rice{
+    growing land:
+    Fluvisols	20 - 35°C	70 - 90%
+    Gleysols 22 - 35°C	80 - 95%
+    Planosols 20 - 34°C	75 - 90%
+    Stagnosols	18 - 32°C	80 - 95%
+    Plinthosols	22 - 36°C	70 - 85%
+    Vertisols	22 - 38°C	65 - 85%
+}
+
+Wheate{
+Chernozems	10 - 25°C	50 - 70%
+Phaeozems	12 - 26°C	50 - 75%
+Luvisols	10 - 24°C	45 - 70%
+Cambisols	10 - 27°C	40 - 65%
+Kastanozems	8 - 25°C	40 - 60%
+Vertisols	15 - 30°C	50 - 80%
+Calcisols	12 - 28°C	30 - 55%
+Regosols	10 - 25°C	40 - 60%
+Planosols	8 - 22°C	50 - 75%
+}
+
+Banana{
+Chernozems	10 - 25°C	50 - 70%
+Phaeozems	12 - 26°C	50 - 75%
+Luvisols	10 - 24°C	45 - 70%
+Cambisols	10 - 27°C	40 - 65%
+Kastanozems	8 - 25°C	40 - 60%
+Vertisols	15 - 30°C	50 - 80%
+Calcisols	12 - 28°C	30 - 55%
+Regosols	10 - 25°C	40 - 60%
+Planosols	8 - 22°C	50 - 75%
+}
+coconut{
+Arenosols	22 - 38°C	65 - 85%
+Fluvisols	22 - 36°C	75 - 90%
+Gleysols	24 - 38°C	80 - 95%
+Calcisols	24 - 37°C	60 - 80%
+Luvisols	20 - 34°C	65 - 85%
+Vertisols	24 - 38°C	65 - 85%
+}
+
+cheakpea{
+ Vertisols	15 - 30°C	40 - 60%
+Luvisols	12 - 28°C	45 - 65%
+Phaeozems	10 - 27°C	40 - 60%
+Cambisols	10 - 26°C	35 - 55%
+Calcisols	15 - 32°C	30 - 50%
+Regosols	12 - 30°C	35 - 55%
+}
+groundnut{
+Arenosols	20 - 35°C	50 - 70%
+Luvisols	18 - 34°C	45 - 65%
+Cambisols	15 - 32°C	40 - 60%
+Vertisols	20 - 38°C	50 - 75%
+Calcisols	18 - 36°C	40 - 60%
+Regosols	18 - 34°C	40 - 60%
+}
+
+carrot{
+Luvisols	10 - 25°C	60 - 80%
+Cambisols	10 - 27°C	55 - 75%
+Phaeozems	8 - 22°C	65 - 85%
+Fluvisols	12 - 26°C	60 - 80%
+Regosols	10 - 24°C	50 - 75%
+Arenosols	12 - 28°C	50 - 70%
+}
+beatroot{
+Luvisols	10 - 28°C	60 - 80%
+Cambisols	12 - 30°C	55 - 75%
+Fluvisols	12 - 28°C	60 - 85%
+Vertisols	15 - 30°C	50 - 75%
+Calcisols	15 - 32°C	40 - 65%
+Regosols	12 - 26°C	50 - 75%
+}
+
+potato{
+Luvisols	10 - 22°C	60 - 80%
+Cambisols	10 - 25°C	55 - 75%
+Phaeozems	8 - 20°C	65 - 85%
+Fluvisols	12 - 24°C	60 - 80%
+Regosols	10 - 22°C	60 - 75%
+Acrisols	12 - 26°C	60 - 70%
+Andosols	8 - 22°C	60 - 85%
+}
+
+tomato{
+Luvisols	18 - 32°C	50 - 70%
+Cambisols	15 - 30°C	45 - 65%
+Fluvisols	18 - 35°C	50 - 70%
+Vertisols	20 - 35°C	45 - 70%
+Calcisols	20 - 35°C	40 - 65%
+Regosols	18 - 32°C	50 - 70%
+}
+
+onion{
+Luvisols	15 - 30°C	50 - 70%
+Cambisols	15 - 30°C	45 - 65%
+Fluvisols	18 - 30°C	50 - 70%
+Vertisols	20 - 30°C	45 - 70%
+Regosols	18 - 30°C	45 - 70%
+Calcisols	20 - 30°C	40 - 65%
+}
+
+cabage{
+Luvisols	10 - 25°C	60 - 80%
+Cambisols	10 - 25°C	55 - 75%
+Fluvisols	12 - 26°C	60 - 80%
+Phaeozems	8 - 22°C	60 - 80%
+Acrisols	12 - 26°C	50 - 70%
+}
+
+Pigeon Pea பட்டாணி{
+    Vertisols	18 - 35°C	50 - 70%
+Luvisols	20 - 36°C	45 - 65%
+Cambisols	18 - 38°C	50 - 70%
+Acrisols	20 - 38°C	40 - 60%
+Fluvisols	22 - 38°C	45 - 70%
+}

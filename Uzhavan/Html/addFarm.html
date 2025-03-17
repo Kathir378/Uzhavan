@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Farm</title>
+    <link rel="stylesheet" href="../Css/addFarm.css">
+    <script src="https://kit.fontawesome.com/1e7ec9ba98.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/bf8b05a135.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="../Css/root.css">
+    <title>Uzhavan</title>
+    <link rel="icon" href="../image/icons/logo3Square.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+            <footer class="footer">
+                <div class="leftCorner">
+                    <img src="../image/icons/logo2.png" id="logo" alt="Image Description">
+                </div>
+                <div class="footerIcon">
+                    <a onclick='rootColor("Home")'  href="../Html/calendar.html  ">  <i class="fa-solid fa-house " id="Home" style="color: rgb(168, 205, 137);"></i></a>
+                    
+                    <!-- <a onclick='rootColor("Calendar")'  href="../Html/calendar.html ">  <i class="fa-solid fa-seedling" id="Calendar" style="color: rgb(168, 205, 137);"></i></i></a> -->
+                    <a onclick='rootColor("Advisor")' href="../Html/cropAdvisor.html"> <i class="fa-solid fa-robot" id="Advisor"  style="color: rgb(168, 205, 137);"></i></a>
+                    <a onclick='rootColor("Pratice")'  href="../Html/availableCrops.html"><i class="fa-brands fa-leanpub " id="Pratice" style="color: rgb(168, 205, 137);"></i></a>
+                    <a onclick='rootColor("Shop")'  href="../Html/shop.html ">                     <i id="Shop" class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(168, 205, 137);"></i></a>
+                </div>
+            </footer>
+            <div class="lapDiv">
+                <header class="header">
+
+                     <div class="logos currentLoc heading1">
+                                            
+
+                    <p>Add Farm</p>
+                     <input id="cropSearch" type="search">
+                    </div>
+                  <div class="logos option">
+                      <!-- <i onclick="search()" id="searchIcon"" class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i>   -->
+                      <!-- <i class="fa-solid fa-cart-shopping fa-sm" style="color: #ffffff;"></i> -->
+                  <a id="dropDown" onclick="notifShow()">
+                        <i class="fa-solid fa-bell fa-flip-horizontal fa-sm" style="color: #ffffff;"></i>
+                    </a>
+                    <div id="notificationDropdown" class="notification-content" ></div>
+                   
+                            <a href="userInfo.html" style="text-decoration: none; color:white"> <i class="fa-solid fa-circle-user"></i></a>
+                            </div>
+                </header>
+                <section class="details">
+                    <!-- <div id="farmAddingError">
+                        <p>Pincode and Survey Number already exist</p>
+                        <button id="pinErrorButton">Okay</button>
+                    </div> -->
+
+                   <div id="details-holder">
+                    <!-- Farm Name -->
+                        <div class="form-group">
+                            <label for="farmName"><i class="fa-solid fa-seedling icon"></i> Farm Name</label>
+                            <span class="error-message" id="farmNameError">Please complete this field</span>
+                        </div>
+                        <input type="text" name="name" id="farmName" placeholder="Enter your farm name">
+
+                        <!-- Pincode -->
+                        <div class="form-group">
+                            <label for="pinCode"><i class="fa-solid fa-location-dot icon"></i> Pincode</label>
+                            <span class="error-message" id="pinCodeError">Please enter valid pincode</span>
+                        </div>
+                        <input type="text" maxlength="6" name="pinCode" id="pinCode" placeholder="Enter your farm pincode">
+
+                        <!-- Land Area -->
+                        <div class="form-group">
+                            <label for="landArea"><i class="fa-solid fa-ruler-combined icon"></i> Unit of measurement</label>
+                            <span class="error-message" id="landAreaError">Please select a land area</span>
+                        </div>
+                        <select id="landArea" onchange="showInputBox()">
+                            <option value="" disabled selected>Unit of measurement</option>
+                            <option value="acre">Acre</option>
+                            <option value="hectare">Hectare</option>
+                            <option value="cent">Cent</option>
+                        </select>
+
+                        <!-- Dynamic Input Field -->
+                        <!-- <div id="inputContainer" style="display: none;"> -->
+                            <div class="form-group">
+                                <label id="areaLabel" for="areaValue"><i class="fa-solid fa-ruler-combined icon"></i>Number of units</label>
+                                <span class="error-message" id="areaValueError">Please enter a value</span>
+                            </div>
+                            <input type="number" id="areaValue" placeholder="Enter value" min="0">
+                        <!-- </div> -->
+
+
+                        <div class="form-group">
+                            <label for="survey"><i class="fa-solid fa-land-mine-on icon" ></i> Survey No </label>
+                            <span class="error-message" id="surveyError">Please enter valid survey No</span>
+                        </div>
+                        <input type="text" maxlength="6" name="survey" id="surveyNo" placeholder="Enter the survey no:">
+                        <p id="farmError">Pincode and Survey Number already exist!</p>
+
+
+                        <!-- Submit Button -->
+                        <button id="submitButton1" onclick="exit()">cancel</button>
+                        <button id="submitButton" onclick="validateForm()">Submit</button>
+                        
+                   </div>
+              </section>
+            </div>
+    </div>
+    <script src="../JavaScript/addFarm.js"></script>
+    <script src="../JavaScript/root.js"></script>
+</body>
+</html>
+
+

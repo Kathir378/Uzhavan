@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script src="https://kit.fontawesome.com/1e7ec9ba98.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/calendar.css">
+    <link rel="stylesheet" href="../Css/root.css">
+    <title>Calendar</title>
+    <link rel="icon" href="../image/icons/logo3Square.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <footer class="footer">
+            <div class="leftCorner">
+                <img src="../image/icons/logo2.png" id="logo" alt="Image Description">
+            </div>
+            <div class="footerIcon">
+                <a title="Home" onclick='rootColor("Home")' href="../Html/calendar.html">
+                    <i class="fa-solid fa-house" id="Home" style="color: rgb(168, 205, 137);"></i>
+                </a>
+                <a title="Practice" onclick='rootColor("Pratice")' href="../Html/availableCrops.html">
+                    <i class="fa-brands fa-leanpub" id="Pratice" style="color: rgb(168, 205, 137);"></i>
+                </a>
+                <a title="Advisor and AI bot" onclick='rootColor("Advisor")' href="../Html/cropAdvisor.html">
+                    <i class="fa-solid fa-robot" id="Advisor" style="color: rgb(168, 205, 137);"></i>
+                </a>
+                <a title="Shop" onclick='rootColor("Shop")' href="../Html/shop.html">
+                    <i id="Shop" class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(168, 205, 137);"></i>
+                </a>
+            </div>
+        </footer>
+        <div class="lapDiv">
+            <header class="header">
+                <div class="logos currentLoc heading1">
+
+                    <p>Farm Details</p>
+                </div>
+                <div class="logos option">
+                    <button title="Click to add Farm" id="addFarmButton">Add farm</button>
+                    <a id="dropDown" onclick="notifShow()">
+                        <i class="fa-solid fa-bell fa-flip-horizontal fa-sm" style="color: #ffffff;"></i>
+                    </a>
+
+                    <a title="User Profile" href="userInfo.html" style="text-decoration: none; color:white">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </a>
+                    <div id="notificationDropdown" class="notification-content"></div>
+                </div>
+            </header>
+            <div class="full-section">
+                <div id="subHeader">
+                    <div><input type="text"   id="search" placeholder="Search" autocomplete="off" value="" ></div>
+                    <div id="dropdown-content1">
+                        <a onclick="sortFarms('A-Z')"><i class="fas fa-sort-alpha-down"></i> Alphabetical (A-Z)</a>
+                        <a onclick="sortFarms('Z-A')"><i class="fas fa-sort-alpha-up"></i> Alphabetical (Z-A)</a>
+                        <a onclick="sortFarms('progressLow')"><i class="fas fa-sort-amount-down-alt"></i> Progress (Low
+                            to High)</a>
+                        <a onclick="sortFarms('progressHigh')"><i class="fas fa-sort-amount-up"></i> Progress (High to
+                            Low)</a>
+
+                    </div>
+                    <div></div>
+
+                    <div id="filter"><i class="fa-solid fa-filter"></i></div>
+
+                </div>
+                <div id="farmDetails">
+                    <!-- <div class="noFarmLand">No farm added</div> -->
+                    <div>
+                        <h2></h2>
+                    </div>
+                    <!-- <div id="plus"><i class="fa-solid fa-plus" style="color: #77767b;"></i></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-ups -->
+    <div id="renamePopup" class="popup">
+        <h3>Rename Farm</h3>
+        <input type="text" id="newNameInput" placeholder="Enter new farm name">
+        <div class="buttonsOf">
+            <button id="confirmRename" class="confirm">Confirm</button>
+            <button id="cancelRename" class="cancel">Cancel</button>
+        </div>
+    </div>
+
+    <div id="deletePopup" class="popup">
+        <h2>Are you sure you want to delete this farm?</h2>
+        <div class="buttonsOf">
+            <button id="confirmDelete" class="confirm">Delete</button>
+            <button id="cancelDelete" class="cancel">Cancel</button>
+        </div>
+    </div>
+
+    <script src="../JavaScript/calendar.js"></script>
+    <script src="../JavaScript/root.js"></script>
+
+</body>
+
+</html>

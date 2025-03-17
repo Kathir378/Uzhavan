@@ -1,0 +1,214 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Open Sans", serif;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.exitFromExplaination {
+    /* background-color: red; */
+    justify-content: right;
+    padding-right: 1.4em;
+}
+
+.topicHeading {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-right: 2em;
+}
+
+.details {
+    height: 100%;
+    padding: 2em 1em 1em 1em;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+#currentCrop {
+    width: 70%;
+    height: 690px;
+    margin: 2% auto;
+    /* background-color: red; */
+    background-image: url(../image/simpleDesign/learingFarm.png);
+    background-position: 0% 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    clip: path;
+    display: flex;
+    align-items: center;
+    /* Aligns items vertically */
+    justify-content: space-between;
+    /* Adjust spacing */
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.currentCropName {
+    width: 100%;
+    height: 3rem;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    /* border-bottom: 2px solid rgb(200, 200, 200); */
+    box-shadow: 20px 2px solid rgb(58, 57, 57);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    position: static;
+}
+
+.whatNeedToDo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: rgb(110, 177, 119); */
+    padding: 0 3% 3% 3%;
+}
+
+#backToCrop {
+    /* background-color: red; */
+}
+
+.explainationContainer {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: #ece2b1;
+}
+
+.whiteBg {
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(248, 223, 175, 0.856));
+    color: black;
+}
+
+.cropNamehtml2 {
+    width: 70%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 0.5em; */
+    box-sizing: border-box;
+    font-size: 54px;
+    font-weight: 800;
+    color: #6f6363;
+    margin-top: 20px;
+}
+
+/* .section{
+    height: 95%;
+} */
+
+.heart {
+    color: rgb(234, 100, 100);
+
+}
+
+.otherOptions {
+    width: 10%;
+    /* background-color: rgb(136, 45, 45); */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.procedure {
+    width: 60%;
+    margin-left: 20%;
+    height: 2.6em;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(61, 61, 61);
+    border-radius: 50px;
+    margin-bottom: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps {
+    width: 81%;
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 19px;
+    font-weight: 600;
+    padding-left: 0.4em;
+}
+
+.procedure:hover {
+    /* border: 2px solid black; */
+    background-color: rgb(180, 180, 180);
+    /* margin: 1em; */
+
+    /* width: 100%; */
+    animation-name: zoomInOut;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+    transform: scale(1);
+
+}
+
+
+.heading1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    /* background-color: red; */
+}
+
+.boxForExplaination {
+    width: 90%;
+    margin: auto;
+    /* height: 10em; */
+    height: auto;
+    background-color: white;
+    border-radius: 9px;
+    padding: 1%;
+    margin-top: 2%;
+    /* border-bottom: 1px solid; */
+    box-shadow: 4px 8px 20px 0px #c6bbbb;
+
+}
+
+.heading {
+    font-weight: 600;
+    color: green;
+}
+
+.paragraph {
+    margin-top: 1%;
+    font-size: 17px;
+    font-weight: 400;
+    /* color: green; */
+}
+
+.currentLoc {
+    /* width: 80%; */
+    height: 90%;
+    /* background-color: rgb(143, 65, 65); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem !important;
+}
+
+.cropInfo {
+    width: 12em;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

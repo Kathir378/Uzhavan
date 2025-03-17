@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/root.css">
+    <link rel="stylesheet" href="../Css/shop.css">
+    <link rel="icon" href="../image/icons/logo3Square.png">
+    <script src="https://kit.fontawesome.com/1e7ec9ba98.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/bf8b05a135.js" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div class="container">
+            <footer class="footer">
+                <div class="leftCorner">
+                  <img src="../image/icons/logo2.png" id="logo" alt="Image Description">
+                </div>
+                <div class="footerIcon">
+                   <a onclick='rootColor("Home")'  href="../Html/calendar.html ">  <i class="fa-solid fa-house " id="Home" style="color: rgb(168, 205, 137);"></i></a>
+                  
+                    <a onclick='rootColor("Pratice")'  href="../Html/availableCrops.html"><i class="fa-brands fa-leanpub " id="Pratice" style="color: rgb(168, 205, 137);"></i></a>
+                    <a onclick='rootColor("Advisor")' href="../Html/cropAdvisor.html"> <i class="fa-solid fa-robot" id="Advisor"  style="color: rgb(168, 205, 137);"></i></a>
+                      <a onclick='rootColor("Shop")'  href="../Html/shop.html "> <i id="Shop" class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(168, 205, 137);"></i></a>
+                </div>
+            </footer>
+            <div class="lapDiv">
+                <header class="header">
+                     <div class="logos currentLoc heading1">
+                    <p>Shop</p>
+                     <input id="cropSearch" type="search">
+                    </div>
+                  <div class="logos option">
+                      <!-- <i onclick="search()" id="searchIcon"" class="fa-solid fa-magnifying-glass fa-sm" style="color: #ffffff;"></i>   -->
+                      <!-- <i class="fa-solid fa-cart-shopping fa-sm" style="color: #ffffff;"></i> -->
+                       <a id="dropDown" onclick="notifShow()">
+                        <i class="fa-solid fa-bell fa-flip-horizontal fa-sm" style="color: #ffffff;"></i>
+                    </a>
+                    <div id="notificationDropdown" class="notification-content" ></div>
+                   
+                      <a href="userInfo.html" style="text-decoration: none; color:white"> <i class="fa-solid fa-circle-user"></i></a>
+                  </div>
+                </header>
+                 <section class="section1 ">
+                      <nav>
+                          <button class="navbutton" onclick="filterCategory('all')">All</button>
+                          <button class="navbutton" onclick="filterCategory('fertilizers')">Fertilizers</button>
+                          <button class="navbutton" onclick="filterCategory('tools')">Tools</button>
+                          <button class="navbutton" onclick="filterCategory('machinery')">Machinery</button>
+                          <button class="navbutton" onclick="filterCategory('seeds')">Seeds</button>
+                      </nav>
+                      <section id="product-container">
+                             <div class="product-card">
+                               <img class="productImage" src="../image/products/${product.img}">
+                               <h3>${product.name}</h3>
+                               <p class="price">${product.price}</p>
+                               <button onclick="buyNow('${product.link}')">Buy Now</button>
+                             </div>
+                      </section>
+                </section>
+            </div>   
+    </div>
+          <script src="../JavaScript/root.js"></script>
+          <script src="../JavaScript/shop.js"></script>
+</body>
+</html>
+
+
+
+
+                    <!-- <a onclick='rootColor("Caendar")'  href="../Html/calendar.html ">  <i class="fa-solid fa-seedling" id="Calendar" style="color: rgb(168, 205, 137);"></i></i></a> -->
